@@ -6,6 +6,7 @@ Vue.component('vue-directivas',{
             <a v-bind:href="link.href" v-text="link.text" :title="link.title" target="_blank"></a>
             <!-- <directivas-html></directivas-html> -->
             <DirectivasHtml/>
+            <DirectivaShow/>
         </div>
     
     `,
@@ -22,7 +23,8 @@ Vue.component('vue-directivas',{
     },
     components: {
         // 'directivas-html' : DirectivasHtml
-        DirectivasHtml
+        DirectivasHtml,
+        DirectivaShow
     }
 }) 
 
