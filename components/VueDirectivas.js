@@ -9,6 +9,7 @@ Vue.component('vue-directivas',{
             <DirectivaShow/>
             <DirectivaIf/>
             <DirectivaFor/>
+            <DirectivaOn/>
         </div>
     
     `,
@@ -28,7 +29,8 @@ Vue.component('vue-directivas',{
         DirectivasHtml,
         DirectivaShow,
         DirectivaIf,
-        DirectivaFor
+        DirectivaFor,
+        DirectivaOn,
     }
 }) 
 
