@@ -1,11 +1,15 @@
 let DirectivaOn = {
     template: `
-        <div @click = "decirHola">            
+        <header>            
             <h1 v-text="title"></h1>
             <p v-html = "message"></p>
             <!-- <button v-on:click = "decirHola">Dame un click</button> -->
-            <button @click.stop.prevent = "comprarEntrada">Comprar entrada</button> Disponibles: <span v-text="entradas"></span>
-        </div>
+            <button @click.stop.prevent = "comprarEntrada">Comprar entrada</button>
+            <div>
+                
+            </div>
+            Disponibles: <span v-text="entradas"></span>
+        </header>
         `,
     data() {
         return {
