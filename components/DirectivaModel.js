@@ -12,10 +12,15 @@ let DirectivaModel = {
             </label>
 
             <h2>Películas</h2>
-            <label v-for="(movie,key) in movies" :key=""key>
+            <label v-for="(movie,key) in movies" :key="key">
                 <input :value="movie" type="checkbox" v-model="favoritesMovies">         
                 {{ movie }}
             </label>
+
+            <h2 v-show = " favoritesMovies.length > 0 ">Películas favoritas</h2>
+            <ul>
+                <li v-for="(movie,key) in favoritesMovies" :key="key"> {{movie}} </li>
+            </ul>            
         </div>
         `,
     data() {
